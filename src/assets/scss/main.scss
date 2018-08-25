@@ -1,0 +1,22 @@
+@import "./components/aside.scss";
+@import "./components/header.scss";
+@import "./components/common.scss";
+*{
+    margin: 0;
+    padding: 0;
+  }
+  html, body, #app, .fullheight{
+    height: 100%;
+  }
+  .main-content {
+    display: flex;
+    padding: 20px;
+    background: #dfe4ea;
+  }
+  .page-content {
+    flex: 1;
+  }
+  .breadcrumb {
+    margin-bottom: 15px;
+  }
+  

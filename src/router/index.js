@@ -7,7 +7,7 @@ let routes = [
   {
     path: '/login',
     name: 'login',
-    component: require('@/Login').default
+    component: require('@/pages/Login').default
   },
   {
     path: '/',
@@ -21,12 +21,12 @@ let routes = [
         path: 'home',
         name: 'home',
         component: require('@/pages/Home').default
-      }
-      // {
-      //   path: 'number',
-      //   name: 'number',
-      //   component: require('@/pages/number/index').default
-      // },
+      },
+      {
+        path: 'number',
+        name: 'number',
+        component: require('@/pages/number/index').default
+      },
       // {
       //   path: 'number/edit',
       //   name: 'number/edit',
@@ -52,21 +52,21 @@ let routes = [
       //   name: 'number/producting',
       //   component: require('@/pages/number/Producting').default
       // },
-      // {
-      //   path: 'producer',
-      //   name: 'producer',
-      //   component: require('@/pages/producer/index').default
-      // },
-      // {
-      //   path: 'product',
-      //   name: 'product',
-      //   component: require('@/pages/product/index').default
-      // },
-      // {
-      //   path: 'staff',
-      //   name: 'staff',
-      //   component: require('@/pages/staff/index').default
-      // }
+      {
+        path: 'producer',
+        name: 'producer',
+        component: require('@/pages/producer/index').default
+      },
+      {
+        path: 'product',
+        name: 'product',
+        component: require('@/pages/product/index').default
+      },
+      {
+        path: 'staff',
+        name: 'staff',
+        component: require('@/pages/staff/index').default
+      }
     ]
   },
 

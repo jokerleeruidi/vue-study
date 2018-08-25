@@ -1,0 +1,29 @@
+.aside {
+    background: #0F283B;
+      width: 100%;
+      height: 100%;
+    .ap-submenu__title {
+      background:rgba(15,40,59,1);
+      img {
+        margin-right: 6px;
+        padding-bottom:3px;
+      }
+    }
+    .ap-menu-item {
+      font-size:14px;
+      color:rgba(125,135,142,1);
+      &:hover {
+        background:rgba(6,24,38,1);
+      }
+    }
+    .ap-menu-item.is-active {
+      color:#fff;
+    }
+    .ap-menu-item-group>ul{
+      background:rgba(6,24,38,1);
+    }
+    .ap-menu-item-group__title {
+      padding: 0;
+    }
+  }
+  

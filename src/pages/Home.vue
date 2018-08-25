@@ -1,12 +1,21 @@
 <template>
-    <div class="new_login">
-      <div class="new_login2">
-        111
-      </div>
-    </div>
+  <div class="home" >
+    <h1>安润普智能硬件检测平台</h1>
+  </div>
 </template>
+<script>
+  export default {
+    components: {
+
+    }
+  }
+</script>
 <style lang="scss">
-.new_login {
-    background-color: red;
-}
+  .home {
+    text-align: center;
+    font-size: 50px;
+    line-height: 500px;
+  }
 </style>
+
+
