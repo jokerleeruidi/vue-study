@@ -1,78 +1,50 @@
 <template>
-  <!-- <div class="new_number"> -->
+  <div class="number">
     <!-- 面包屑 -->
     <el-breadcrumb separator=">">
       <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
       <el-breadcrumb-item :to="{path:'/number'}">编码管理</el-breadcrumb-item>
     </el-breadcrumb>
-      <!-- <el-card class="box-card" height='100%'>
+      <el-card class="number-card" >
         <div class="text_item">
           批次号列表
         </div>
         <div class="number_search">
-          <el-form class='new_form' ref="form" :model="form" label-width="120px">
+          <el-form ref="form" :model="form" label-width="120px">
             <el-form-item label="集成商／生产商：">
-              <el-input v-model="form.name"></el-input>
+              <el-select v-model="form.region" placeholder="请选择">
+                <el-option label="区域一" value="shanghai"></el-option>
+                <el-option label="区域二" value="beijing"></el-option>
+              </el-select>
             </el-form-item>
-              <el-form-item label="活动名称">
-                <el-input v-model="form.name"></el-input>
-            </el-form-item>
-              <el-form-item>
-                <el-input v-model="form.name"></el-input>
-            </el-form-item>
-              <el-form-item>
-                <el-button type="primary">主要按钮</el-button>
+            <el-form-item label="活动时间">
+              <el-col :span="11">
+                <el-date-picker type="date" placeholder="选择日期" v-model="form.date1" style="width: 100%;"></el-date-picker>
+              </el-col>
+              <el-col class="line" :span="2">-</el-col>
+              <el-col :span="11">
+                <el-time-picker type="fixed-time" placeholder="选择时间" v-model="form.date2" style="width: 100%;"></el-time-picker>
+              </el-col>
             </el-form-item>
           </el-form>
-        </div> -->
-        <!-- <div>
-          <el-table
-            :data="tableData"
-            stripe
-            style="width: 100%">
-            <el-table-column
-              prop="date"
-              label="日期"
-              width="180">
-            </el-table-column>
-            <el-table-column
-              prop="name"
-              label="姓名"
-              width="180">
-            </el-table-column>
-            <el-table-column
-              prop="address"
-              label="地址">
-            </el-table-column>
-          </el-table>
-        </div> -->
-      <!-- </el-card>
-  </div> -->
-</template>
+        </div>
+      </el-card>
+  </div>
+</template> -->
 <script>
   export default {
     data() {
       return {
-        form: {
+       form: {
           name: '',
-        },
-         tableData: [{
-          date: '2016-05-02',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-04',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1517 弄'
-        }, {
-          date: '2016-05-01',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1519 弄'
-        }, {
-          date: '2016-05-03',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1516 弄'
-        }]
+          region: '',
+          date1: '',
+          date2: '',
+          delivery: false,
+          type: [],
+          resource: '',
+          desc: ''
+        }
       }
     },
     methods: {
@@ -83,25 +55,22 @@
   }
 </script>
 <style lang="scss">
-//  .box-card {
-//     // float: left;
-//     width: 1100px;
-//     height: 788px;
-//     .text_item {
-//       margin-left: 20px;
-//       width:73px;
-//       height:20px;
-//       font-size:14px;
-//       font-family:PingFangSC-Regular;
-//       color:rgba(74,85,93,1);
-//       line-height:20px;
-//     }
-//     .number_search {
-//       width:1100px;
-//       height:50px;
-//       background:rgba(248,248,248,1);
-//       // line-height: 60px;
-//     }
-//  }
+.number {
+ .number-card{
+   width:1100px;
+   height:788px;
+   background:rgba(255,255,255,1);
+   border:1px solid rgba(223,228,234,1);
+  //  .text_item {
+  //   padding:10px;
+  //   width:73px;
+  //   height:20px;
+  //   font-size:14px;
+  //   font-family:PingFangSC-Regular;
+  //   color:rgba(74,85,93,1);
+  //   line-height:20px;
+  //  }
+ }
+}
 </style>
 
