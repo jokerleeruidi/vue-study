@@ -131,13 +131,9 @@
           }],
          form: {
           name: '',
-          region: '',
-          date1: '',
-          date2: '',
-          delivery: false,
-          type: [],
-          resource: '',
-          desc: ''
+          code: '',
+          category: '',
+          version: '',
         },
         currentPage1: 5,
         currentPage2: 5,
@@ -194,6 +190,13 @@
     }
     .product_list {
        position: relative;
+       .el-table th>.cell{
+        // width:1298px;
+        height:42px;
+        background:rgba(236,242,249,1);
+        // border:1px solid rgba(223,228,234,1);
+        line-height: 42px;
+       }
       .add_product {
         margin-top: 10px;
         height:26px;

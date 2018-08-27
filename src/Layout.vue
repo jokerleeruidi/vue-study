@@ -40,31 +40,31 @@
         options: [
           {
             label: '首页',
-            // icon: 'iconfont el-pos-icon-home',
+            icon: 'iconfont el-pos-icon-home',
             index: '0',
             link: '/home'
           },
           {
             label: '编号管理',
-            // icon: 'iconfont el-pos-icon-setting',
+            icon: 'iconfont el-pos-icon-setting',
             index: '1',
             link: '/number'
           },
           {
             label: '生产商管理',
-            // icon: 'iconfont el-pos-icon-tongxunlu',
+            icon: 'iconfont el-pos-icon-tongxunlu',
             index: '2',
             link: '/producer'
           },
           {
             label: '产品管理',
-          //   icon: 'iconfont el-pos-icon-fenleihuaban',
+            icon: 'iconfont el-pos-icon-fenleihuaban',
             index: '3',
             link: '/product'
           },
           {
             label: '工号管理',
-            // icon: 'iconfont el-pos-icon-card',
+            icon: 'iconfont el-pos-icon-card',
             index: '4',
             link: '/staff'
           }]
